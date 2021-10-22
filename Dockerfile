@@ -4,6 +4,7 @@ RUN apk add --update --no-cache --virtual .build-deps \
         g++ \
         bash \
         python3-dev \
+        git \
         libxml2 \
         libxml2-dev && \
     apk add libxslt-dev
