@@ -46,5 +46,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            sparkcyf/${{ env.IMAGE_NAME }}:latest
-            sparkcyf/${{ env.IMAGE_NAME }}:build-${{ steps.date.outputs.date }}
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ needs.get-tags.outputs.tags }}
