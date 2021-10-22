@@ -46,5 +46,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            sustech-cra/bandersnatch-docker/${{ env.IMAGE_NAME }}:latest
-            sustech-cra/bandersnatch-docker/${{ env.IMAGE_NAME }}:build-${{ steps.date.outputs.date }}
+            sparkcyf/bandersnatch-docker/${{ env.IMAGE_NAME }}:latest
+            sparkcyf/bandersnatch-docker/${{ env.IMAGE_NAME }}:build-${{ steps.date.outputs.date }}
